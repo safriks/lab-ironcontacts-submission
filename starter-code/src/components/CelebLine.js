@@ -14,6 +14,10 @@ export default class CelebLine extends Component {
                 <td>
                     <span>{this.props.popularity}</span>
                 </td>
+                <td>
+                    <button onClick={()=>{this.props.removeContact(this.props.lineIndex)}}>
+                    remove</button>
+                </td>
             </tr>);
     }
 }
